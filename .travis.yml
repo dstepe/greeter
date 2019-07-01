@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - '7.2'
+  - '7.3'
+  - 7.4snapshot
+
+install:
+  - composer install
+
+script: phpunit tests/Unit
+
+cache:
+  directories:
+  - $HOME/.composer/cache
